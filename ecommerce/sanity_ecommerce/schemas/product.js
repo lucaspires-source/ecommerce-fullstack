@@ -29,7 +29,7 @@ export default {
         {
             name:'price',
             title:'Price',
-            type:'Number',
+            type:'number',
         },
         {
             name:'details',
