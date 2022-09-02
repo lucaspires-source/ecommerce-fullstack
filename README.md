@@ -1,1 +1,1 @@
-# ecommerce-fullstack
+# ecommerce fullstack
