@@ -1,9 +1,21 @@
 import React from 'react'
 
-const index = () => {
+const Home = () => {
   return (
-    <div>index</div>
+    <>
+    <div>
+      <h2>Best Selling Product</h2>
+      <p>Speakers of many variations</p>
+    </div>
+    <div>
+      {
+        ['Product1', 'Procuct2'].map(
+          (product) => product
+        )
+      }
+    </div>
+    </>
   )
 }
 
-export default index
+export default Home
