@@ -4,10 +4,9 @@ import FooterBanner from '../components/FooterBanner'
 import HeroBanner from '../components/HeroBanner'
 import { client } from '../lib/client'
 const Home = ({products, banner}) => {
-  console.log(products)
   return (
     <>
-      <HeroBanner />
+      <HeroBanner  heroBanner={banner.length && banner[0]}/>
       <div className="products-heading">
         <h2>Best Selling Product</h2>
         <p>Speakers of many variations</p>
