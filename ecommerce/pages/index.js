@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import FooterBanner from '../components/FooterBanner'
 import HeroBanner from '../components/HeroBanner'
+import Product from '../components/Product'
 import { client } from '../lib/client'
 const Home = ({products, banner}) => {
   return (
@@ -12,9 +13,9 @@ const Home = ({products, banner}) => {
         <p>Speakers of many variations</p>
       </div>
       <div className="products-container">
-        {['Product1', 'Procuct2'].map((product) => product)}
+        {products?.map((product) => <Product key={product._id} product={product}/> )}
       </div>
-      <FooterBanner />
+      <FooterBanner footerBanner={banner && banner[0]}/>
       <Footer />
     </>
   )
