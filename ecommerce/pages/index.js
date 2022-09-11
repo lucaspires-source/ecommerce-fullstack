@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../components/Footer'
 import FooterBanner from '../components/FooterBanner'
 import HeroBanner from '../components/HeroBanner'
 import Product from '../components/Product'
